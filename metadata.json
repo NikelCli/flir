@@ -1,0 +1,12 @@
+{
+  "name": "flir-manager",
+  "version": 0.1,
+  "type": "addon",
+  "commands": {
+    "flir": {
+      "link": "start_flir",
+      "cmds": ["-h", "create"],
+      "help": "provide custom package creation!"
+    }
+  }
+}
