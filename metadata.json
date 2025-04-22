@@ -1,12 +1,19 @@
 {
-  "name": "flir-manager",
-  "version": 0.1,
-  "type": "addon",
-  "commands": {
-    "flir": {
-      "link": "start_flir",
-      "cmds": ["-h", "create"],
-      "help": "provide custom package creation!"
+    "owner": "NikelCli",
+    "name":"flir-manager",
+    "version": "latest",
+    "repository":"https://github.com/NikelCli/flir",
+    "assets": {
+        "path": "{repository}/releases/download/{version}",
+        "files": {
+            "windows-amd64": "windows-{version}-x86_64.tar.gz"
+        }
+    },
+    "commands": {
+        "flir": {
+            "params": ["-h", "create"],
+            "help": "provide custom package creation!",
+            "link": "start_flir"
+        }
     }
-  }
 }
