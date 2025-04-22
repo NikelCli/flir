@@ -6,7 +6,7 @@
     "assets": {
         "path": "{repository}/releases/download/{version}",
         "files": {
-            "windows-amd64": "windows-{version}-x86_64.tar.gz"
+            "windows-amd64": "windows-x86_64.tar.gz"
         }
     },
     "commands": {
