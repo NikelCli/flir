@@ -1,7 +1,7 @@
 {
         "owner": "m6rshmm3ll0w",
         "name": "flir-manager",
-        "version": "latest",
+        "version": "0.2",
         "repository": "https://github.com/NikelCli/flir",
         "dependencies": [],
         "assets": {
