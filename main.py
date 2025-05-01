@@ -1,4 +1,4 @@
-from modules import console as c 
+from core.global_init import console as c
 
-def start_flir(*args):
-    c.print("OK its a [red]flir[/red]")
+def run_flir(args):
+    c.print("hello World")
