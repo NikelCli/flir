@@ -1,19 +1,48 @@
 {
-    "owner": "NikelCli",
-    "name":"flir-manager",
-    "version": "latest",
-    "repository":"https://github.com/NikelCli/flir",
-    "assets": {
-        "path": "{repository}/releases/download/{version}",
-        "files": {
-            "windows-amd64": "windows-x86_64.tar.gz"
-        }
-    },
-    "commands": {
-        "flir": {
-            "params": ["-h", "create"],
-            "help": "provide custom package creation!",
-            "link": "start_flir"
+    "flir": {
+        "owner": "m6rshmm3ll0w",
+        "name": "flir-manager",
+        "version": "latest",
+        "repository": "https://github.com/NikelCli/flir",
+        "dependencies": [],
+        "assets": {
+            "path": "{repository}/releases/download/{version}",
+            "files": {
+                "windows-amd64": {
+                    "dist": "windows-x86_64.tar.gz",
+                    "checksumm": "windows-x86_64-checksumm.txt"
+                }
+            }
+        },
+        "commands": {
+            "flir": {
+                "params": [
+                    "create"
+                ],
+                "help": {
+                    "discription": "this addon provide simple creating a addons",
+                    "create <addon-type>": "create base addon from template"
+                },
+                "link": "nikel_addons.{package_name}.run_flir"
+            }
+        },
+        "settings": {
+            "type": "multiple-input",
+            "name": "Flir settings",
+            "inputs": {
+                "chache-save": {
+                    "type": "selector",
+                    "name": "Save chache?",
+                    "base-value": true,
+                    "vars": {
+                        "Yes": true,
+                        "No": false
+                    }
+                }
+            }
+        },
+        "icons": {
+            "delete": "󰆴 "
         }
     }
 }
