@@ -1,5 +1,4 @@
 {
-    "flir": {
         "owner": "m6rshmm3ll0w",
         "name": "flir-manager",
         "version": "latest",
@@ -44,5 +43,4 @@
         "icons": {
             "delete": "󰆴 "
         }
-    }
 }
